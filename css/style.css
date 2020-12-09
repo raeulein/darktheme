@@ -1,1 +1,525 @@
-//hi
+html{
+    height: 100%;
+}
+
+/* montserrat-300 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('fonts/montserrat-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/montserrat-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* montserrat-500 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('fonts/montserrat-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+
+
+body{
+    background-color: #424242;
+    background-image: url("bilder/bg.jpg");
+    background-size: auto;
+    background-position: top; 
+    background-attachment: fixed;
+    background-repeat: repeat;
+    color: #ffffff;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    min-height: 100%;
+    margin-bottom: 58px;
+    height: 100%;
+}
+
+#all{
+    margin: auto;
+    max-width: 960px;
+}
+
+a{
+    text-decoration: none;
+    color: #98d73f;
+}
+
+.nolink{
+    color: white;
+}
+
+#menu {
+    height: 80px;
+    width: 100%;   
+    margin: 25px 25px 30px 25px;
+}
+
+#logo {
+    height:100%;
+    float: left;
+    margin-right: 40px;
+}
+
+#menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    text-align: justify;
+    overflow: visible;
+}
+
+#menu li{
+    float:left;
+    margin: 0 25px;
+    transition: transform .2s;
+    overflow: visible;
+}
+
+#menu li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff00;
+    font-weight: 500;
+}
+
+#menu li:hover{
+    
+    /*border-bottom: 1px solid #98d73f;*/
+    transform: scale(1.1);
+}
+
+#menu li:hover a{
+    color: #98d73f;
+}
+
+#menubutton{
+    display: none;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items:center;
+}
+
+#special{
+    background-color: #98d73f;
+    color: white;
+    border-radius: 5px;
+}
+
+#special:hover a{
+    color: #98d73f;
+    background-color: white;
+}
+
+
+#content{
+    color: white;
+    margin: 0 25px;
+}
+
+h1{
+    color: #98d73f;
+}
+
+h2{
+    color: #98d73f;
+}
+
+p{
+    font-weight: 300;
+}
+
+#referenzen {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#referenzen div{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 30%;
+}
+
+#referenzen div img{
+    width: 100%;
+}
+
+#referenzen div h2{
+    text-align: center;
+}
+
+#referenzen div p{
+    margin: 15px;
+}
+
+#product{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#product img{
+    float: left;
+    max-width: 25%;
+    max-height: 100%;
+    margin: 0 25px 0 20px;
+    border-radius: 10px 10px 25px 10px;
+}
+
+#prodbeschreibung{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 70%;
+    height: 100%;
+}
+
+.anfragen{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 25px;
+    text-align: center;
+}
+
+.anfragen h3{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+}
+
+.anfragen a{
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.anfragen a:hover{
+    color: #98d73f;
+    background-color: white;
+}
+
+#disclaimer{
+    font-size: 8px;
+}
+
+#kontakt{
+    width: 100%;
+}
+
+#kontakt form{
+    display: grid;
+    grid-gap: 25px 25px;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+}
+
+#for{
+    grid-column: 1;
+}
+
+.textinput{
+    grid-column: 2 / 4;
+    padding: 10px 10px;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: #00000000;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+.textinput option{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#send{
+    grid-column: 1;
+    background-color: #98d73f;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    padding: 15px;
+    margin: 0 25px;
+    border: none;
+    font-size: 1em;
+}
+
+
+
+/*//////////////FOOTER////////////////*/
+#footer {
+    margin-top: 30px;
+    width: 100%;
+    border-top: 1px solid white;
+    position: relative;
+}
+
+#footerbox{
+    width: 100%;
+    position: relative;
+}
+
+#left-footer{
+    position: absolute;
+    display: block;
+    left: 0px;
+    margin: 15px 20px;
+}
+
+#middle-footer{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+#badge{
+    display: inline-block;
+}
+
+#right-footer{
+    position: absolute;
+    display: block;
+    right: 0px;
+    margin: 15px 20px;
+}
+
+#footer ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: justify;
+}
+
+#footer li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff00;
+    transition: transform .2s;
+    font-weight: 300;
+}
+
+#footer li a:hover{
+    color: #98d73f;
+    /*border-bottom: 1px solid #98d73f;*/
+}
+
+
+
+
+
+/* TABLET-DESIGN */
+
+@media only screen and (min-width: 600px) and (max-width: 960px){
+
+
+}
+
+
+
+
+
+/*  SMARTPHONE-DESIGN */
+
+
+@media only screen and (max-width: 600px){
+
+    body{
+        background-attachment: initial;
+    }
+
+    #all{
+        min-width: 100%;
+    }
+
+    #menu {
+        width: 90%;
+        margin: 25px 25px 30px 25px;
+    }
+    
+    #logo{
+        float: none;
+        margin-left: 25px;
+        left: 0;
+        height:80px;
+        position: absolute;
+        display: block;
+        margin-right: 25px;
+    }
+
+    #menubutton{
+        right: 0;
+        height:80px;
+        position: absolute;
+        display: block;
+        margin-right: 25px;
+    }
+
+    
+    #menu ul{
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        /*overflow: hidden;*/
+        text-align: justify;
+        overflow: visible;
+    }
+    
+    .hidden{
+        display: none;
+    }
+
+    .visible{
+        display: flex;
+    }
+
+    #menu li{
+        float: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        transition: none;
+        overflow: visible;
+        margin-top: 10px;
+        margin-bottom: 10px;;
+    }
+    
+    #menu li a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff00;
+        font-weight: 500;
+    }
+    
+    #menu li:hover{
+        transform: scale(1.0);
+        color: #ffffff;        
+    }
+    
+    #menu li:hover a{
+        transform: scale(1.0);
+        color: #ffffff;
+    }
+    
+    nav{
+        height: 100%;
+        display: flex;
+        margin: auto;
+        align-items:center;
+    }
+    
+    #special{
+        background-color: #98d73f;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    #special:hover a{
+        transform: scale(1.0);
+        color: #ffffff;
+        background-color: #98d73f;
+    }
+
+    #referenzen div{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #product{
+        width: 100%;
+        margin-bottom: 25px;
+        position: relative;
+        height: max-content;
+        border-radius: 10px;
+    }
+    
+    #product img{
+        max-width: 90%;
+        margin: 0 25px 0 25px;
+        border-radius: 10px 10px 25px 10px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    #prodbeschreibung{
+        margin: 0 25px 25px 25px;
+        width: 90%;
+        position: relative;
+        display: inline-block;
+        height: 230px;
+    }
+
+
+    #kontakt form{
+        grid-template-columns: auto;
+
+    }
+
+    .textinput{
+        grid-column: 1;
+        width: 80vw;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+
+
+    #left-footer{
+        position: relative;
+        display: block;
+        margin: auto;
+        width: max-content;
+        text-align: center;
+    }
+
+    #left-footer ul li a{
+        text-align: center;
+    }
+
+    #middle-footer{
+        display: none;
+    }
+    
+    #right-footer{
+        position: relative;
+        display: block;
+        right: 0px;
+        margin: auto;
+        width: max-content;
+        text-align: center;
+    }
+    
+    #right-footer h3{
+        display: none;
+    }
+    
+
+}
