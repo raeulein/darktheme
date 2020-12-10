@@ -46,7 +46,7 @@
     </script> 
 
             <div id="menu">
-                <a href="index.php"><img id="logo" alt="Logo" src="bilder/logo.png"></a>
+                <a href="index.php"><?= $Wcms->siteTitle() ?></a>
                 <img id="menubutton" onclick="nav()" alt="Menü-Button" src="themes/wondercms-dark/bilder/menu.png">
                 <nav class="hidden" id="nav">
                     <ul>
@@ -59,15 +59,20 @@
             </div>
             <div id="footer">
                 <div id="footerbox">
-                    <div id="left-footer">
-                         <?= $Wcms->footer() ?>   
-                    </div>
+                    	<div id="left-footer">
+			 	<?= $Wcms->block('subside') ?>
+                         
+                    	</div>
+			<div id="right-footer">
+			 	<?= $Wcms->footer() ?>
+                         
+                    	</div>
                     
                 </div>
             </div>
         </div>
   
-  <?= $Wcms->block('subside') ?>
+
   
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
