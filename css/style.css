@@ -8,8 +8,8 @@ html{
     font-style: normal;
     font-weight: 300;
     src: local(''),
-         url('themes/wondercms-dark/fonts/montserrat-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('themes/wondercms-dark/fonts/montserrat-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   
   /* montserrat-500 - latin */
@@ -18,15 +18,15 @@ html{
     font-style: normal;
     font-weight: 500;
     src: local(''),
-         url('themes/wondercms-dark/fonts/montserrat-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('themes/wondercms-dark/fonts/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/montserrat-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   
 
 
 body{
     background-color: #424242;
-    background-image: url("themes/wondercms-dark/bilder/bg.jpg");
+    background-image: url("../bilder/bg.jpg");
     background-size: auto;
     background-position: top; 
     background-attachment: fixed;
