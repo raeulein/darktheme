@@ -47,7 +47,7 @@
 
             <div id="menu">
                 <a href="index.php"><img id="logo" alt="Logo" src="bilder/logo.png"></a>
-                <img id="menubutton" onclick="nav()" alt="Menü-Button" src="bilder/menu.png">
+                <img id="menubutton" onclick="nav()" alt="Menü-Button" src="themes/wondercms-dark/bilder/menu.png">
                 <nav class="hidden" id="nav">
                     <ul>
                         <?= $Wcms->menu() ?>
